@@ -12,10 +12,22 @@ class Skill_Rating {
         this.skill = skill;
         this.defe = defense;
         this.wet_rain = wet_rain;
-        this.rating_sum;
     }
     overall_rating (){
-        this.rating_sum = this.pace + this.refl + this.team_c + this.skill + this.defe + this.wet_rain;
+        const ratings = [this.pace, this.reflexes, this.team_chemistry, this.skill, this.defense, this.wet_rain]
+        for (const rating of ratings){
+            rating_sum += rating;
+            return rating_sum
+        }
+        this.overall_r = rating_sum / 6;
+        return this.overall_r;
+    }
+    inform_card (){
+        const ratings = [this.pace, this.reflexes, this.team_chemistry, this.skill, this.defense, this.wet_rain]
+        for (const rating of ratings){
+            rating_sum += rating + 3;
+            return rating_sum
+        }
         this.overall_r = rating_sum / 6;
         return this.overall_r;
     }
@@ -30,8 +42,8 @@ class Driver extends Skill_Rating {
         this.height = height;
         this.weight = weight;
         this.image = image;
-        this.chat = chat;
     }
+        
 }
 
 class Driver_name {
@@ -69,7 +81,7 @@ class User_info {
         this.password = password;
     }
     set usrn(value){
-        if(value.length < 2 || value.length > 15){
+        if(value.length < 2 ){
             throw new Error("Username must be 2 to 15 characters.");
         }
         this.username = value;
@@ -90,15 +102,4 @@ class User_info {
 const new_user = new User_info();
 new_user.username = "jamie";
 console.log(new_user.username)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+//© 2021 GitHub, Inc.TermsPrivacySecurityStatusDocsContact GitHubPricingAPITrainingBlogAbout
