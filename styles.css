@@ -1,8 +1,9 @@
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75vh;
+  height: 55vh;
   padding: 0 5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,6 +21,9 @@ body {
 }
 
 .menu {
+  position: relative;
+  top: -150px;
+  left: 0px;
   background-image: -webkit-gradient(linear, left top, right top, from(#e92271), to(#173cdf));
   background-image: linear-gradient(to right, #e92271 0%, #173cdf 100%);
   border-radius: 0.5rem;
@@ -1989,8 +1993,8 @@ body {
 
 @media (max-width: 45rem) {
   .menu {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e92271), to(#173cdf));
-    background-image: linear-gradient(to bottom, #e92271 0%, #173cdf 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#173cdf));
+    background-image: linear-gradient(to bottom, #fa0000 0%, #173cdf 100%);
   }
   .menu a {
     font-size: 1.4rem;
@@ -2056,16 +2060,53 @@ body {
 }
 
 /* *** Menu Bar w/ drop down END *** */
-.DriverCard {
-  position: relative;
-  top: 400px;
-  left: 500px;
+
+.Euroscoutlogo {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  background-color: whitesmoke;
 }
-td.description {
+
+.Euroscoutlogobg {
+  position: absolute;
+  height: 57px;
+  width: 1200px;
+  top: 5px;
+  left: 100px;
+  background-color: whitesmoke;
+}
+
+
+.maincontentparent {
+ 
+
+}
+
+.Background {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.DriverCard {
+  position: absolute;
+  top: 400px;
+  left: 275px;
+}
+.description {
+  position: absolute;
   min-width: 450px;
   max-width: 650px;
+  top: 450px;
+  left: 700px;
   text-align: left;
   padding: 5px;
   margin: 10px;
+}
+.EuroscoutVideo {
+  position: absolute;
+  top: 500px;
+  left: 1300px;
 }
 /*# sourceMappingURL=styles.css.map */
