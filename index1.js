@@ -60,19 +60,35 @@ class Driver_record extends Driver_name {
     }
 
 }
-// Class for a single competition results
-class Series_Record extends Driver_record {
-    constructor(appearances, wins, poles, fastest_laps, podiums, points, standings){
-        this.appearances = appearances;
-        this.wins = wins;
-        this.poles = poles;
-        this.fastest_laps = fastest_laps;
-        this.podiums = podiums;
-        this.points = points;
-        this.standings = standings;
-    }
 
+class Race_weekend extends Driver_record {
+    constructor(driver_name, year, series, race_location, sr1, sr2, f_race){
+        super(driver_name, year, series)
+        this.race_location = race_location;
+        this.sr1 = sr1;
+        this.sr2 = sr2;
+        this.f_race = f_race;
+    }
+    overall_rating (){
+        const points_week = [this.sr1, this.sr2, this.f_race]
+        for (const point of points_week){
+            weekend_p += point;
+            return weekend_p;
+        }
 }
+// Class for a single season results
+//class Series_Record extends Race_weekend {
+    //constructor(appearances, wins, poles, fastest_laps, podiums, points, standings){
+        //this.appearances = appearances;
+        //this.wins = wins;
+        //this.poles = poles;
+        //this.fastest_laps = fastest_laps;
+        //this.podiums = podiums;
+        //this.points = points;
+        //this.standings = standings;
+   // }
+
+//}
 //User login class to get and set username for sing in, database, and forgot password/username.
 class User_info {
     constructor(username, email, password){

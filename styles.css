@@ -2065,16 +2065,16 @@ body {
   position: absolute;
   top: 5px;
   left: 100px;
-  background-color: whitesmoke;
+  
 }
 
 .Euroscoutlogobg {
   position: absolute;
-  height: 57px;
-  width: 1200px;
-  top: 5px;
-  left: 100px;
-  background-color: whitesmoke;
+  height: 60px;
+  width: 1790px;
+  top: 0px;
+  left: 0px;
+  background-color: #fffefe;
 }
 
 
@@ -2108,5 +2108,17 @@ body {
   position: absolute;
   top: 500px;
   left: 1300px;
+}
+
+.instagramlogo {
+  position: absolute;
+  top: 10px;
+  left: 1500px;
+}
+
+.twitterlogo {
+  position: absolute;
+  top: 10px;
+  left: 1540px;
 }
 /*# sourceMappingURL=styles.css.map */
