@@ -47,6 +47,11 @@ class Driver extends Skill_Rating {
         this.weight_lb = weight_lb;
         this.image = image;
     }
+    age() {
+        let date =  new Date().getFullYear();
+        age = date - this.dob;
+        return this.age
+    }
         
 }
 
@@ -140,28 +145,28 @@ src.appendChild(OscarPiastri);
 //Objects, drivers and skill rating only
 //Formula 2
 
-const Oscar_Piastri = new Driver(F2, "Oscar Piastri", 20, 06-04-2001, "Prema Racing", "Australia", 178, 68, 5-10, 150, DennisHauger.png, 81, 80, 78, 82, 75, 79);
-const Guanyu_Zhou = new Driver(F2, "Guanyu Zhou", 22, 30-05-1999, "Uni Virtuosi", "China", 175, 63, 5-9, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Robert_Shwartzman = new Driver(F2, "Robert Shwartzman", 22, 16-09-1999, "", "Russia", 183, 70, 6-0, 154, DennisHauger.png, 79, 83, 69, 83, 78, 80);
-const Dan_Ticktum = new Driver(F2, "Dan Ticktum", 22, 08-06-1999, "Carlin", "United Kingdom", 180, 66, 5-11, 145, DennisHauger.png, 77, 80, 70, 80, 79, 78);
-const Theo_Pourchaire = new Driver(F2, "Theo Pourchaire", 18, 20-08-2003, "Art Grand Prix", "France", 188, 66, 6-2, 145, DennisHauger.png, 78, 82, 62, 80, 76, 77);
-const Juri_Vips = new Driver(F2, "Juri Vips", 21, 10-08-2000, "Hitech Grand Prix", "Estonia", 180, 64, 5-11, 141, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Jehan_Daruvula = new Driver(F2, "Jehan Daruvula", 23, 01-10-1998, "Carlin", "India", 176, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Liam_Lawson = new Driver(F2, "Liam Lawson", 19, 11-02-2002, "Hitech Grand Prix", "New Zealand", 173, 65, 5-8, 143, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Felipe_Drugovich = new Driver(F2, "Felipe Drugovich", 21, 23-05-2000, "Uni Virtuosi", "Brazil", 175, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Richard_Verschoor = new Driver(F2, "Richard Verschoor", 21, 16-12-2000, "MP Motorsport", "Netherlands", 187, 61, 6-2, 134, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Christian_Lundgaard = new Driver(F2, "Christian Lundgaard", 20, 23-07-2001, "Art Grand Prix", "Denmark", 185, 68, 6-1, 150, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Ralph_Boschung = new Driver(F2, "Ralph Boschung", 24, 23-09-1997, "Campos Racing", "Switzerland", 187, 74, 6-2, 163, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const David_Beckmann = new Driver(F2, "David Beckmann", 21, 27-04-2000, "Campos Racing", "Germany", 169, 63, 5-6, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Marcus_Armstrong = new Driver(F2, "Marcus Armstrong", 21, 29-07-2000, "Dams", "New Zealand", 175, 63, 5-9, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Bent_Viscaal = new Driver(F2, "Bent Viscaal", 22, 18-09-1999, "Trident", "Netherlands", 169, 60, 5-6, 132, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Roy_Nissany = new Driver(F2, "Roy Nissany", 27, 30-11-1994, "Dams", "Israel", 176, 72, 5-9, 159, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Jake_Hughes = new Driver(F2, "Jake Hughes", 27, 30-05-1994, "HWA Racelab", "United Kindom", 175, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Marino_Sato = new Driver(F2, "Marino Sato", 22, 12-05-1999, "Trident", "Japan", 172, 72, 5-8, 158, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Enzo_Fittipaldi = new Driver(F2, "Enzo Fittipaldi", 20, 18-07-2001, "Charouz Racing System", "Brazil", 168, 68, 5-6, 149, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Guilherme_Samaia = new Driver(F2, "Guilherme Samaia", 25, 02-10-1996, "Charouz Racing System", "Brazil", 177, 70, 5-10, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Clément_Novalak = new Driver(F2, "Clément Novalak", 21, 23-12-2000, "MP Motorsport", "France", 175, 68, 5-9, 150, DennisHauger.png, 81, 82, 74, 84, 79, 81);
-const Alessio_Deledda = new Driver(F2, "Alessio Deledda", 25, 10-12-1994, "HWA Racelab", "Italy", 183, 73, 6-0, 161, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Oscar_Piastri = new Driver(F2, "Oscar Piastri", 20, 06-04-2001, "Prema Racing", "Australia", 178, 68, 5-10, 150, DennisHauger.png, 81, 80, 78, 82, 75, 79);
+let Guanyu_Zhou = new Driver(F2, "Guanyu Zhou", 22, 30-05-1999, "Uni Virtuosi", "China", 175, 63, 5-9, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Robert_Shwartzman = new Driver(F2, "Robert Shwartzman", 22, 16-09-1999, "", "Russia", 183, 70, 6-0, 154, DennisHauger.png, 79, 83, 69, 83, 78, 80);
+let Dan_Ticktum = new Driver(F2, "Dan Ticktum", 22, 08-06-1999, "Carlin", "United Kingdom", 180, 66, 5-11, 145, DennisHauger.png, 77, 80, 70, 80, 79, 78);
+let Theo_Pourchaire = new Driver(F2, "Theo Pourchaire", 18, 20-08-2003, "Art Grand Prix", "France", 188, 66, 6-2, 145, DennisHauger.png, 78, 82, 62, 80, 76, 77);
+let Juri_Vips = new Driver(F2, "Juri Vips", 21, 10-08-2000, "Hitech Grand Prix", "Estonia", 180, 64, 5-11, 141, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Jehan_Daruvula = new Driver(F2, "Jehan Daruvula", 23, 01-10-1998, "Carlin", "India", 176, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Liam_Lawson = new Driver(F2, "Liam Lawson", 19, 11-02-2002, "Hitech Grand Prix", "New Zealand", 173, 65, 5-8, 143, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Felipe_Drugovich = new Driver(F2, "Felipe Drugovich", 21, 23-05-2000, "Uni Virtuosi", "Brazil", 175, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Richard_Verschoor = new Driver(F2, "Richard Verschoor", 21, 16-12-2000, "MP Motorsport", "Netherlands", 187, 61, 6-2, 134, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Christian_Lundgaard = new Driver(F2, "Christian Lundgaard", 20, 23-07-2001, "Art Grand Prix", "Denmark", 185, 68, 6-1, 150, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Ralph_Boschung = new Driver(F2, "Ralph Boschung", 24, 23-09-1997, "Campos Racing", "Switzerland", 187, 74, 6-2, 163, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let David_Beckmann = new Driver(F2, "David Beckmann", 21, 27-04-2000, "Campos Racing", "Germany", 169, 63, 5-6, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Marcus_Armstrong = new Driver(F2, "Marcus Armstrong", 21, 29-07-2000, "Dams", "New Zealand", 175, 63, 5-9, 139, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Bent_Viscaal = new Driver(F2, "Bent Viscaal", 22, 18-09-1999, "Trident", "Netherlands", 169, 60, 5-6, 132, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Roy_Nissany = new Driver(F2, "Roy Nissany", 27, 30-11-1994, "Dams", "Israel", 176, 72, 5-9, 159, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Jake_Hughes = new Driver(F2, "Jake Hughes", 27, 30-05-1994, "HWA Racelab", "United Kindom", 175, 70, 5-9, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Marino_Sato = new Driver(F2, "Marino Sato", 22, 12-05-1999, "Trident", "Japan", 172, 72, 5-8, 158, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Enzo_Fittipaldi = new Driver(F2, "Enzo Fittipaldi", 20, 18-07-2001, "Charouz Racing System", "Brazil", 168, 68, 5-6, 149, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Guilherme_Samaia = new Driver(F2, "Guilherme Samaia", 25, 02-10-1996, "Charouz Racing System", "Brazil", 177, 70, 5-10, 154, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Clément_Novalak = new Driver(F2, "Clément Novalak", 21, 23-12-2000, "MP Motorsport", "France", 175, 68, 5-9, 150, DennisHauger.png, 81, 82, 74, 84, 79, 81);
+let Alessio_Deledda = new Driver(F2, "Alessio Deledda", 25, 10-12-1994, "HWA Racelab", "Italy", 183, 73, 6-0, 161, DennisHauger.png, 81, 82, 74, 84, 79, 81);
 
 
 //Formula 3
